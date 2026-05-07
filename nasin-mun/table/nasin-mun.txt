@@ -1,0 +1,220 @@
+# This IME is based loosely on the ASCII Input Standard (https://sitelenpona.net/ascii), and the UCSUR (https://www.kreativekorp.com/ucsur/charts/sitelen.html)
+# Alternate glyphs based on standard glyph numbering are not implemented as the ASCII Input Standard suggests
+# since it would conflict with fcitx5 input.
+# It is not otherwise implemented since there isn't a standard implementation as of writing.
+#
+# If you make any edits, use `libime_tabledict` to turn this file into a dictionary, probably available under the `libime` package on your distro
+# Otherwise, a .dict file should already be provided that reflects the default table.
+
+
+# KeyCode sets the characters that fcitx5 will detect, if a character is used as a key under the [Data] section
+# but not present in KeyCode, fcitx5 will not be able to use it
+KeyCode=ptkmnswljaeiouv>^<x
+
+# Length sets the maximum length of characters that can make up a key.
+# e.g: setting to 3 means that fcitx5 will think that after typing 3 characters, a new word has begun;
+# you would only be able to type "ake" in "akesi" before a new word starts.
+# 15 is the number of characters in kijetesantakalu, and no word in Sitelen Pona's UCSUR (as of writing) is longer.
+Length=15
+
+[Data]
+# All entries should be given in the format `Key [any? amount of whitespace] Word`,
+# where Key is the latin text the user has to type, and Word is what the IME outputs.
+# Characters are ordered (mostly) according to their Tier in Common Sitelen Pona, with a miscellaneous section at the end.
+
+# Tier 1 Word Characters
+a       󱤀
+akesi   󱤁
+ala     󱤂
+alasa   󱤃
+ale     󱤄
+ali     󱤄
+anpa    󱤅
+ante    󱤆
+anu     󱤇
+awen    󱤈
+e       󱤉
+en      󱤊
+esun    󱤋
+ijo     󱤌
+ike     󱤍
+ilo     󱤎
+insa    󱤏
+jaki    󱤐
+jan     󱤑
+jelo    󱤒
+jo      󱤓
+kala    󱤔
+kalama  󱤕
+kama    󱤖
+kasi    󱤗
+ken     󱤘
+kepeken 󱤙
+kili    󱤚
+kin     󱥹
+kiwen   󱤛
+ko      󱤜
+kon     󱤝
+kule    󱤞
+kulupu  󱤟
+kute    󱤠
+la      󱤡
+lape    󱤢
+laso    󱤣
+lawa    󱤤
+len     󱤥
+lete    󱤦
+li      󱤧
+lili    󱤨
+linja   󱤩
+lipu    󱤪
+loje    󱤫
+lon     󱤬
+luka    󱤭
+lukin   󱤮
+lupa    󱤯
+ma      󱤰
+mama    󱤱
+mani    󱤲
+meli    󱤳
+mi      󱤴
+mije    󱤵
+moku    󱤶
+moli    󱤷
+monsi   󱤸
+monsuta 󱥽
+mu      󱤹
+mun     󱤺
+musi    󱤻
+mute    󱤼
+nanpa   󱤽
+nasa    󱤾
+nasin   󱤿
+nena    󱥀
+ni      󱥁
+nimi    󱥂
+noka    󱥃
+o       󱥄
+olin    󱥅
+ona     󱥆
+open    󱥇
+pakala  󱥈
+pali    󱥉
+palisa  󱥊
+pan     󱥋
+pana    󱥌
+pi      󱥍
+pilin   󱥎
+pimeja  󱥏
+pini    󱥐
+pipi    󱥑
+poka    󱥒
+poki    󱥓
+pona    󱥔
+pu      󱥕
+sama    󱥖
+seli    󱥗
+selo    󱥘
+seme    󱥙
+sewi    󱥚
+sijelo  󱥛
+sike    󱥜
+sin     󱥝
+sina    󱥞
+sinpin  󱥟
+sitelen 󱥠
+sona    󱥡
+soweli  󱥢
+suli    󱥣
+suno    󱥤
+supa    󱥥
+suwi    󱥦
+tan     󱥧
+taso    󱥨
+tawa    󱥩
+telo    󱥪
+tenpo   󱥫
+toki    󱥬
+tomo    󱥭
+tonsi   󱥾
+tu      󱥮
+unpa    󱥯
+uta     󱥰
+utala   󱥱
+walo    󱥲
+wan     󱥳
+waso    󱥴
+wawa    󱥵
+weka    󱥶
+wile    󱥷
+
+# Tier 2 Word Characters
+kijetesantakalu 󱦀
+kipisi          󱥻
+ku              󱦈
+leko            󱥼
+misikeke        󱦇
+n               󱦆
+namako          󱥸
+soko            󱦁
+
+# Tier 3 Word Characters
+epiku   󱦃
+jasima  󱥿
+lanpan  󱦅
+linluwi 󱦤
+majuna  󱦢
+meso    󱦂
+oko     󱥺
+su      󱦦
+
+# Tier 3 Word Characters - alternate glyphs
+# Commented by default, due to lack of font support at time of writing
+#niv  󱥁
+#ni>  󱦋
+#ni^  󱦊
+#ni<  󱦉
+#sewi 󱦌
+
+
+# Misc
+
+# Other UCSUR Characters
+# Commented by default, due to lack of font support at time of writing
+#kokosila   󱦄
+#pake       󱦠
+#apeja      󱦡
+#powe       󱦣
+#linluwi    󱦤
+#kiki       󱦥
+#isipin     󱦧
+#kamalawala 󱦨
+#kapesi     󱦩
+#melome     󱦪
+#mijomi     󱦫
+#misa       󱦬
+#nimisin    󱦭
+#nja        󱦮
+#oke        󱦯
+#omekapo    󱦰
+#puwa       󱦱
+#san        󱦲
+#taki       󱦳
+#unu        󱦶
+#usawi      󱦷
+#wa         󱦸
+#wuwojiti   󱦹
+#yupekosi   󱦺
+
+# Corner brackets are included in this file, since the ASCII standard says to use "te" and "to" for input
+# If they were in `../punctuation/punc.mb.tok`, they would not be able to be typed via this method
+# I recommend typing corner brackets by using ' and/or " (single and double quotes) instead. It makes more sense, and is already implemented here
+# Commented by default
+#te 「
+#to 」
+
+# Abbreviations
+# Commented by default
+#tw  󱥩
+#kpk 󱤙
+#x   󱤂
