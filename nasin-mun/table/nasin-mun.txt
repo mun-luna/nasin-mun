@@ -1,7 +1,5 @@
-# This IME is based loosely on the ASCII Input Standard (https://sitelenpona.net/ascii), and the UCSUR (https://www.kreativekorp.com/ucsur/charts/sitelen.html)
-# Alternate glyphs based on standard glyph numbering are not implemented as the ASCII Input Standard suggests
-# since it would conflict with fcitx5 input.
-# It is not otherwise implemented since there isn't a standard implementation as of writing.
+# This IME is based mainly on the UCSUR (https://www.kreativekorp.com/ucsur/charts/sitelen.html), but omits certain glyphs due to a lack of font support as of writing.
+# Alternate glyphs are not implemented yet since there isn't a standard encoding as of writing.
 #
 # If you make any edits, use `libime_tabledict` to turn this file into a dictionary, probably available under the `libime` package on your distro
 # Otherwise, a .dict file should already be provided that reflects the default table.
@@ -205,13 +203,6 @@ su      󱦦
 #wa         󱦸
 #wuwojiti   󱦹
 #yupekosi   󱦺
-
-# Corner brackets are included in this file, since the ASCII standard says to use "te" and "to" for input
-# If they were in `../punctuation/punc.mb.tok`, they would not be able to be typed via this method
-# I recommend typing corner brackets by using ' and/or " (single and double quotes) instead. It makes more sense, and is already implemented here
-# Commented by default
-#te 「
-#to 」
 
 # Abbreviations
 # Commented by default

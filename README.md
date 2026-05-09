@@ -12,21 +12,18 @@ if using nixos, there is an included module (requires home manager) that will en
 
 ## usage
 
-type any toki pona word, and confirm it by pressing `space`. pressing `enter` will release the raw text instead.
+type any toki pona word, and confirm it by pressing `space` or any punctuation shown below. pressing `enter` will release the raw text instead.
 
 fcitx5 will show a candidate list as you type, which could help you type faster. use the arrow keys and `space` to select a candidate, or the numbers on your keyboard.
 
 ### punctuation
 - `[` and `]` for start and end of cartouche
 - `(` and `)` for start and end of long glyph
-- `&` for joining glyphs
-- `-` for combining glyphs
-- `+` for stacking glyphs
+- `-` for joining glyphs in a non-standard way
+- `=` for stacking glyphs on top of each other
+- `+` for nesting glyphs inside of each other
 - `|` for ideographic space
-- `'`, or `"` for corner brackets
+- `'`, or `"` for corner bracket quotes
 - `.` for middle dot
 - `:` for colon
 - `,` for tally mark
-- `{` and `}` for start and end of reverse long glyph (considered deprecated)
-- `=` for middle of cartouche (considered deprecated)
-- `_` for middle of long glyph (considered deprecated)
