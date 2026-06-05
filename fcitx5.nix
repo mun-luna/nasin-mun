@@ -14,17 +14,21 @@
 
   home-manager.users.USERNAME = {
     home.file = {
-      "nasin-mun.conf" = {
-        source = ./nasin-mun/inputmethod/nasin-mun.conf;
-        target = ".local/share/fcitx5/inputmethod/nasin-mun.conf";
-      };
-      "punc.mb.tok" = {
+      "tok-punctuation" = {
         source = ./nasin-mun/punctuation/punc.mb.tok;
         target = ".local/share/fcitx5/punctuation/punc.mb.tok";
       };
-      "nasin-mun.dict" = {
+      "configuration" = {
+        source = ./nasin-mun/inputmethod/nasin-mun.conf;
+        target = ".local/share/fcitx5/inputmethod/nasin-mun.conf";
+      };
+      "dictionary" = {
         source = ./nasin-mun/table/nasin-mun.dict;
         target = ".local/share/fcitx5/table/nasin-mun.dict";
+      };
+      "profile" = {
+        source = ./nasin-mun/profile;
+	target = ".config/fcitx5/profile";
       };
     };
   };
