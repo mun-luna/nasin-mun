@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "THIS SCRIPT WILL NOT INSTALL THE NEEDED PACKAGES: which are fcitx5, fcitx5-table-other, and sometimes fcitx5-chinese-addons depending on the distro."
 mkdir -p ~/.local/share/fcitx5/
-cp -r ./nasin-mun/ ~/.local/share/fcitx5/
+cp -r ./nasin-mun/* ~/.local/share/fcitx5/
 mkdir -p ~/.config/fcitx5/
 cp ./nasin-mun/profile ~/.config/fcitx5/profile
 pkill fcitx5
