@@ -1,4 +1,4 @@
-# Tier 1 Punctuation Characters
+## Tier 1 Punctuation Characters
 [	󱦐
 ]	󱦑
 -	‍
@@ -6,7 +6,7 @@
 +	󱦖
 |	　
 
-# Tier 2 Punctuation Characters
+## Tier 2 Punctuation Characters
 (	󱦗
 )	󱦘
 "	「 」
@@ -14,12 +14,12 @@
 .	󱦜
 :	󱦝
 
-# Tier 3 Punctuation Characters
+## Tier 3 Punctuation Characters
 ,	󱦞
 
-# Deprecated/Obscure Features
-# Commented by default
-#{	󱦚
-#}	󱦛
-#~	󱦒
-#_	󱦔
+## Deprecated/Obscure Features
+## Commented by default
+##{	󱦚
+##}	󱦛
+##~	󱦒
+##_	󱦔
