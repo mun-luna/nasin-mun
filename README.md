@@ -1,5 +1,6 @@
 
-# nasin mun
+# [NASIN MUN HAS MIGRATED TO CODEBERG](https://codeberg.org/mun-luna/nasin-mun)
+# THE GITHUB REPO WILL NO LONGER RECEIVE UPDATES
 
 a fcitx5 IME for sitelen pona
 
